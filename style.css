@@ -1,0 +1,585 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900');
+@font-face {
+    font-family: "Avenir";
+    src: url('font/Avenir.TTC');
+    } 
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#fffff0;
+    font-size:16px;
+}
+
+.grid{
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(16, minmax(300px,auto));
+    grid-auto-flow: row;
+    grid-auto-rows: minmax(50px,auto);
+    
+}
+
+.gridrow{
+   /* background-color: aqua;*/
+}
+
+#titre{
+    grid-column: 1/4;
+    grid-row:1/3 ;
+}
+
+
+#sommaire{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#VideoGameMusicTitle{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#soundcloudLogo{
+    /*height: 960px;
+    width: 540px;*/
+    width:540px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0vh;
+
+    transform: scale(1);
+    transition: 500ms;
+    transition-delay: 130ms;
+   
+}
+#soundcloudLogo:hover{
+    transform: scale(1.15);
+    transition: 500ms;
+    transition-delay: 130ms;
+}
+
+
+
+#VideoGameMusicLink{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-auto-rows: auto;
+}
+
+#SoundesignTitle{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#itchio{
+    width:540px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+    transform: scale(1);
+    transition: 500ms;
+    transition-delay: 130ms;
+}
+
+#itchio:hover{
+    transform: scale(1.15);
+    transition: 500ms;
+    transition-delay: 130ms;
+}
+
+#deathdoorPicture{
+    width:540px;
+    display: block;
+    padding-left: 15vh;
+    /*margin-right: auto;*/
+   
+
+}
+
+#videoDeathDoor{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-right: 3vh;
+
+}
+
+#descriptionDeathDoor{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: auto;
+}
+
+#mariofootPicture{
+    width:540px;
+    display: block;
+    /*margin-left: auto;*/
+    padding-right: 13vh;
+}
+
+#videoMariofoot{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 3vh;
+}
+
+#descriptionMariofoot{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: auto;
+}
+
+#NieRAutomataPicture{
+    width:540px;
+    display: block;
+    padding-left: 15vh;
+    /*margin-right: auto;*/
+}
+
+#videoNieRAutomata{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#descriptionNieRAutomata{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: auto;
+}
+
+#videoAdamAudio{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 3vh;
+}
+
+#AdamAudioPicture{
+    width:540px;
+    display: block;
+    /*margin-left: auto;*/
+    padding-right: 13vh;
+}
+
+#descriptionAdamAudio{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: auto;
+}
+
+#VideoGameProjectsTitle{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/********Manikins****************/
+
+#ManikinsPicture{
+   grid-column-start: 1;
+   grid-column-end: 4;
+}
+
+#bannerManikins{
+    width:2000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10vh; 
+}
+
+#videoTeaserManikins{
+    grid-column-start: 2;
+    grid-column-end: 4;
+   
+}
+
+#videoManikins{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#descriptionManikins{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: auto;
+}
+
+#textTeaserManikins{
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#textGameplayManikins{
+   
+    padding-left: auto;
+    padding-right: auto;
+}
+
+/*************Way of The Soul***********************/
+
+#WayofsoulPicture{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  
+}
+
+#bannerWayOfSoul{
+    display: block;
+   margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10vh;
+    width: 2025px;
+    /*height :448px;*/
+}
+
+/*#textGameplayWayofsoul, #textTeaserWayofsoul{
+    background: url("icones/fondWayOfSoulFloue.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}*/
+
+#TrailerWayofsoul{
+    grid-column-start: 2;
+    grid-column-end: 4;
+  
+}
+
+#videoWayofsoul{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+}
+
+#descriptionWayofsoul{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: auto;
+   
+}
+
+#textTeaserWayofsoul{
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#textGameplayWayofsoul{
+    padding-left: auto;
+    padding-right: auto;
+}
+
+
+.videos{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ContactTitle{
+    grid-column: 1/4;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+#Contact{
+    grid-column: 1/4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*#photo1{
+    float:left;
+    
+    margin-left:5vh;
+    margin-top:-50vh;
+    padding-right:0px;
+}
+
+#photo2{
+    float:right;
+   
+    margin-top:-10vh;
+    margin-right:15vh;
+    padding-right:0px;
+}*/
+
+
+
+
+h1{
+    /**font-family:  "Avenir", arial ,sans-serif;**/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color : #191a24;
+    font-size: 5em/*50px*/;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:35vh; 
+
+}
+
+h2{
+    /**font-family:  "Avenir", arial ,sans-serif;**/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color : #191a24;
+    font-size: 3.125em/*50px*/;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5vh;  
+}
+
+h3{
+    /**font-family:  "Avenir", arial ,sans-serif;**/
+    font-family: 'Poppins', sans-serif;
+    color : #191a24;
+    font-size: 3.125em/*50px*/;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:25vh;
+    margin-left:10vh;
+}
+
+text{
+    font-family: 'Avenir', monospace;
+    color : #191a24;
+    font-size: 1.5em;
+    margin-top: 3rem;
+    margin-bottom:2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*#project{
+    font-family: 'Source Code Pro', monospace;
+    color : #191a24;
+    font-size: 2.8125em;
+    margin-top: 14.5rem;
+    margin-left:5.08em;
+}*/
+
+
+
+img{
+    padding-right:1rem;
+}
+
+
+span{
+    /**font-family:  "Avenir", arial ,sans-serif;**/
+    font-family: 'Poppins', sans-serif;
+    
+    display:flex;
+    margin-left:35px;
+}
+
+
+
+
+
+
+.button {
+    border-radius: 4px;
+   /* background-color: #fffff0;*/
+   background:transparent;
+    border: none;
+    color: #191a24;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    width: 4 00px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+    
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);*/
+    transition: 0.5s;
+    
+}
+  
+.button:hover span {
+    padding-right: 40px;
+    /*clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);*/
+    background-color: #191a24;
+    color: #fffff0;
+}
+    
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#applemusic{
+    width:7em;
+}
+
+p{
+    font-size:35px;
+}
+
+#anim{
+    /*position:relative;*/
+    margin:0px;
+    
+}
+
+#anim:after{
+    content:"";
+    position:absolute;
+    height:0.075em;
+    width:100%;
+    background:#191a24;
+    top:1.75em;
+    left:0;
+    
+    transform-origin: left;
+    transition: left;
+    transform: translateX(0px);
+   /* transform: scaleX(0); */  
+    transition: 500ms;
+}
+
+.button:hover #anim:after{
+    transform: translateX(20px);
+    /*transform: scaleX(1);*/
+    transition: 500ms;
+    transition-delay: 130ms;
+}
+
+li{
+    float:center;
+    list-style: none;
+    
+}
+
+#btnDessus{
+    grid-column: 1/4;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    top:0em;    
+}
+
+
+
+/*#btnDessous{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top:23em;
+}*/
+
+#brouillon{
+    /*float:center;*/
+    position: absolute;
+    z-index:-1;
+    top: 42rem;
+}
+
+#project{
+    position:relative;
+}
+
+.icones{
+    transform: translateY(0px);
+    transition:500ms;
+    transition-timing-function: ease;
+    
+}
+
+.vignettes{
+    width:40px;
+}
+
+.icones:hover{
+    transform: translateY(2px);
+    transition:500ms;
+    transition-timing-function: ease;
+}
+
+.icones:active{
+    transform : scale(0.9);
+    opacity : 5%;
+}
+
+.imgPhoto{
+    width:300px;
+}
+
+@media (max-width:1100px){
+    body{
+        font-size:10px;
+    }
+    
+    h1{
+        /*font-size:30px;*/
+        margin-top:40vh;
+    }
+    p{
+        font-size:30px;
+        
+    }
+    .button{
+        font-size:30px;
+    }
+    .photos{
+        /*visibility: hidden;*/
+        float:center;
+        z-index:-1;
+      
+    }
+    .imgPhoto{
+        width:200px;
+        
+    }
+    #photo1{
+        margin-left:18vh;
+    }
+    #photo2{
+        margin-top:8vh;
+    }
+    .vignettes{
+        width: 30px;
+    }
+    #bannerWayOfSoul{
+        width:1100px;
+    }
+    #bannerManikins{
+        width:1100px;
+    }
+    
+}
