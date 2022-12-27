@@ -24,6 +24,10 @@ body{
     
 }
 
+#itchioIcone{
+    width:256px;
+}
+
 .gridrow{
    /* background-color: aqua;*/
 }
@@ -526,7 +530,7 @@ li{
 }
 
 .icones:hover{
-    transform: translateY(2px);
+    transform: translateY(10px);
     transition:500ms;
     transition-timing-function: ease;
 }
