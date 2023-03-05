@@ -179,6 +179,24 @@ body{
     padding-top: auto;
 }
 
+#AkaliPicture{
+    width: 540px;
+    display: block;
+    padding-left: 15vh;
+    /*margin-right: auto;*/
+}
+
+#videoAkali{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#descriptionAkali{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: auto;
+}
+
 #VideoGameProjectsTitle{
     grid-column-start: 1;
     grid-column-end: 4;
